@@ -35,7 +35,7 @@ se(){
 
       done
 
-            source activate RSC
+            # source activate RSC
             multiqc -f -n ${PIN}.starSolo.multiqc.report .
             mkdir STAR.SOLO.COUNTS STAR.SOLO.BAMS STAR.SOLO.LOGS
             mv *.ReadsPerGene.out.tab STAR.SOLO.COUNTS
@@ -72,7 +72,7 @@ se_split(){
 
         done
 
-                source activate RSC
+                # source activate RSC
                 multiqc -f -n ${PIN}.starSolo.multiqc.report .
                 mkdir STAR.SOLO.COUNTS STAR.SOLO.BAMS STAR.SOLO.LOGS STAR.SOLO.Unmapped
                 mv *Unmapped.out.mate* STAR.SOLO.Unmapped
@@ -121,7 +121,7 @@ pe(){
 
           done
 
-                    source activate RSC
+                    # source activate RSC
                     multiqc -f -n ${PIN}.starSolo.multiqc.report .
                     mkdir STAR.SOLO.COUNTS STAR.SOLO.BAMS STAR.SOLO.LOGS
                     mv *.ReadsPerGene.out.tab STAR.SOLO.COUNTS
@@ -163,7 +163,7 @@ pe_split(){
 
           done
 
-                    source activate RSC
+                    # source activate RSC
                     multiqc -f -n ${PIN}.starSolo.multiqc.report .
                     mkdir STAR.SOLO.COUNTS STAR.SOLO.BAMS STAR.SOLO.LOGS STAR.SOLO.Unmapped
                     mv *Unmapped.out.mate* STAR.SOLO.Unmapped

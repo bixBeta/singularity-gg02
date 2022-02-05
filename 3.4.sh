@@ -531,7 +531,7 @@ else
     echo >> beta5.atac.log
     echo "STAR version:" `~/bin/STAR-2.7.0e/bin/Linux_x86_64/STAR --version` >> beta5.atac.log
     echo "multiqc version:" `~/miniconda2/envs/RSC/bin/multiqc --version` >> beta5.atac.log
-    echo "samtools version:" `/programs/bin/samtools/samtools --version` >> beta5.atac.log
+    echo "samtools version:" `samtoolssamtools --version` >> beta5.atac.log
     echo "macs2 version: macs2 2.1.0.20150731 " >> beta5.atac.log
     echo "HOMER version: v4.10.4" >> beta5.atac.log
     echo -------------------------------------------------------------------------------------------------- >> beta5.atac.log
