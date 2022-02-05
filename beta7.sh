@@ -680,7 +680,7 @@ geneBodyCov(){
 
         for i in *.bam
         do
-            samtoolssamtools index -b $i
+            samtools index -b $i
         done
         cd ..
         echo
@@ -954,8 +954,8 @@ else
     echo >> beta7.run.log
     echo "trim_galore version:"`trim_galore --version | grep 'version' | cut -d "n" -f2` >> beta7.run.log
     echo "STAR version:" `STAR --version` >> beta7.run.log
-    echo "multiqc version:" `multiqc --version` >> beta7.run.log
-    echo "samtools version:" `samtools --version` >> beta7.run.log
+    echo `multiqc --version` >> beta7.run.log
+    echo `samtools --version` >> beta7.run.log
     echo "rseqc version: " `geneBody_coverage.py --version | cut -d " " -f2` >> beta7.run.log
     echo -------------------------------------------------------------------------------------------------- >> beta7.run.log
 
