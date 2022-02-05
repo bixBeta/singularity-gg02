@@ -4,7 +4,7 @@
 #SBATCH -n 12
 #SBATCH --mem-per-cpu=18000
 
-source ~/.bash_profile
+# source ~/.bash_profile
 
 usage(){
 
