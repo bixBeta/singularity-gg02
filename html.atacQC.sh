@@ -11,9 +11,9 @@ if [ "$1" = "help" ] || [  -z $1  ]; then
 
 else
 
-scp /home/fa286/bin/scripts/qc.atac.Rmd .
+scp /myBin/singularity-gg02/qc.atac.Rmd .
 
-/programs/R-3.6.3/bin/Rscript /home/fa286/bin/scripts/knit.atacQC.R $1
+Rscript /myBin/singularity-gg02/knit.atacQC.R $1
 
 rm qc.atac.Rmd
 
