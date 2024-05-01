@@ -149,6 +149,8 @@ tsseScores = lapply(bamsList, function(x){
 tsseScores.df = as.data.frame(round(unlist(tsseScores), 2))
 colnames(tsseScores.df) = "value"
 tsseScores.df$labels = rownames(tsseScores.df)
+
+saveRDS(tsseScores, "tsseScores.RDS")
 library(ggplot2)
 
 png("TSSE_scores.png", width = 1080, height = 1080, res = 100)
@@ -163,4 +165,4 @@ dev.off()
 
 system("mkdir atacQC.out")
 system("mv *.png atacQC.out")
-system("mv *_peaks.narrowPeak__percent__annot__log.txt atacQC.out")
+system("mv *_peaks.narrowPeak__percent__annot__log.txt tsseScores.RDS atacQC.out")
